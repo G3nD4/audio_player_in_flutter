@@ -6,16 +6,16 @@ import 'package:mediation_app/hitmotorAPI/objects/track.dart';
 
 void main() {
   //getAlbumsFromHitmotor(3);
-  //getTracksFromAlbum('https://rur.hitmotop.com/album/763844');
+  //getTracksFromAlbum('https://rus.hitmotop.com/album/763844');
 }
 
 Future<List<Album>> getAlbumsFromHitmotor(int multiplier) async {
   int amount = 40 * multiplier;
   late final URL;
   if (amount < 40) {
-    URL = 'https://rur.hitmotop.com/albums';
+    URL = 'https://rus.hitmotop.com/albums';
   } else {
-    URL = 'https://rur.hitmotop.com/albums/start/$amount';
+    URL = 'https://rus.hitmotop.com/albums/start/$amount';
   }
 
   // connecting and getting doc

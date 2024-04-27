@@ -28,13 +28,13 @@ class AlbumContainer extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) => TracksScreen(
-                href: 'https://rur.hitmotop.com$href',
+                href: 'https://rus.hitmotop.com$href',
                 albumImage: albumImage,
                 albumName: albumName,
               )
             )
           );
-          await getTracksFromAlbum('https://rur.hitmotop.com$href')
+          await getTracksFromAlbum('https://rus.hitmotop.com$href')
             .then(
               (value) => MusicPlayerControllerSingleton().setPlaylist(value)
             );
